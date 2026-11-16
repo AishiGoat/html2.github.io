@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="3121768.png" type="image/png">
+    <style>
+p {
+  font-family: Arial, sans-serif; 
+  font-size: 18px;                
+  color: #2c3e50;                 
+  text-align: justify;           
+}
+body {
+  background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+  min-height: 100vh; 
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  font-size: 36px;
+  text-shadow: 1px 1px 2px ; 
+}
+.title{
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease; 
+  cursor: pointer;
+}
+.title:hover {
+  color: #1B5E20; 
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); 
+}
+.title {
+  opacity: 0;
+  animation: tituloSurgir 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+@keyframes tituloSurgir {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+ul {
+  list-style: none; 
+  padding: 0;
+  margin: 25px 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 35px; 
+  margin-bottom: 6px; 
+  color: #2d3748; 
+  font-size: 18px; 
+  font-weight: 500; 
+}
+ul li::before {
+  content: "•"; 
+  position: absolute;
+  left: 12px;
+  color: #764ba2; 
+  font-size: 35px; 
+  font-weight: bold;
+  top: -10px;
+}
+ul li:hover {
+  transform: translateX(6px); 
+  color: #000000; 
+}
+.secao-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;            
+  justify-content: center;
+  margin: 30px auto;   
+  max-width: 1000px;    
+  padding: 0 15px;      
+}
+.card-financas {
+  background-color: #ffffff; 
+  border: 1px solid #e0e0e0; 
+  border-radius: 8px;        
+  padding: 20px;             
+  width: 280px;            
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); 
+  transition: transform 0.2s ease;
+}
+.card-financas:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+.card-financas h3 {
+  color: #000000;
+  margin-top: 0;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+.card-financas p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.card-financas .ano {
+  font-size: 12px;
+  color: #666666;
+}
+.card-financas .detalhe {
+  font-size: 14px;
+  color: #555555;
+  margin-top: 15px;
+  border-top: 1px dashed #eeeeee;
+  padding-top: 10px;
+}
+.positivo { color: #2e7d32; font-weight: bold; } 
+.negativo { color: #c62828; font-weight: bold; } 
+.alerta { color: #ef6c00; font-weight: bold; }  
+@media (max-width: 768px) {
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-collapse: collapse;
+  }
+  .secao-cards {
+    padding: 0 10px;
+    gap: 15px;
+  }
+  .card-financas {
+    width: 100%;
+    max-width: 340px;
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+    </style>
+    <title>Economia Brasileira</title>
+</head>
+<body>
+<h1 align="center" class="title" > <i>Análise da Economia Brasileira - Rodrigo Gestão Financeira</i></h1>
+   <a href="contato.html">Newsletter</a> | 
+    <a href="#consideracoes">Considerações Finais</a>
+<hr>
+ <h2>O Impacto do <ins>Choque Global</ins> no Brasil</h2>
+  <h3>O Cenário do PIB Antes da Pandemia (2019)</h3>
+     <p>No período imediatamente anterior à crise sanitária, em 2019, a economia brasileira operava em um ritmo de recuperação gradual e moderada pós-recessão de 2014-2016. O Produto Interno Bruto (PIB) registrou um crescimento de 1,2% naquele ano, impulsionado principalmente pelo consumo das famílias e pelo setor de serviços. Embora o crescimento fosse considerado tímido por analistas, ele sinalizava uma trajetória de estabilização fiscal e controle inflacionário, que acabou sendo abruptamente interrompida no início de 2020 com a chegada do vírus e a necessidade de paralisação de diversas atividades econômicas.</p>
+<hr>
+  <h3>Gráfico Comparativo do PIB</h3>
+    <p>O gráfico abaixo ilustra o comportamento do PIB brasileiro na transição do período pré-pandemia para o auge do choque econômico global:</p>
+       <img src="GRAFICO PIB.png" alt="Gráfico do PIB do Brasil antes e durante a pandemia" width="600">
+    <p>A crise de 2020 alterou de forma <b>profunda</b> os rumos da inflação, do emprego e do PIB.</p>
+    <p><mark>Destaque Histórico: Em 2020, o PIB brasileiro registrou uma queda histórica de 4,1% devido ao isolamento social.</mark></p>
+<hr>
+  <h3>Principais Fatores Que Contribuiram Para A Queda Economica No Brasil (2020-2022)</h3>
+     <ul>
+            <li>Quebra das cadeias logísticas globais.</li>
+            <li>Disparada das commodities internacionais.</li>
+            <li>Necessidade de forte endividamento público.</li>
+     </ul>
+<hr>
+  <h3>Linha do Tempo Interativa da Crise</h3>
+   <p>Clique nos títulos abaixo para expandir e entender a relação das fases econômicas mapeadas no relatório:</p>
+ <details>
+         <summary><b>1. O Cenário Antes (2019)</b></summary>
+ <p>A economia operava em ritmo de recuperação gradual com crescimento de 1,2% do PIB, sustentada pelo setor de serviços e consumo das famílias, sob a diretriz fiscal do Teto de Gastos e inflação controlada (IPCA em 4,31%).</p>
+ </details>
+        <details>
+            <summary><b>2. O Auge da Crise (2020 - 2021)</b></summary>
+<p>O isolamento social gerou paralisia severa no setor de serviços, resultando na queda histórica de 4,1% do PIB em 2020. Fatores como a quebra de cadeias logísticas e a disparada de commodities levaram a inflação a saltar para 10,06% e o desemprego a atingir o pico de 14,7% em 2021, exigindo medidas extremas como o Orçamento de Guerra.</p>
+ </details>
+        <details>
+            <summary><b>3. O Depois e a Retomada</b></summary>
+<p>O período pós-crise é marcado pela reabertura econômica e expansão dos serviços, trazendo uma acomodação gradual da inflação e estabilidade no emprego. Contudo, o cenário deixou como herança uma forte tensão fiscal decorrente do endividamento público necessário no auge da pandemia.</p>
+        </details>
+    <hr>
+   <h3 id="consideracoes">Considerações Finais</h3>
+ <table border="1" cellpadding="10">
+    <thead> 
+        <tr> 
+            <th>Indicador</th> 
+            <th>Antes (2019)</th> 
+            <th>No Auge (2020-2021)</th> 
+            <th>Depois (Retomada)</th> 
+        </tr> 
+    </thead> 
+        <tr> 
+            <td><b>PIB Anual</b></td> 
+            <td>+1,2%</td> 
+            <td>-4,1% (2020)</td> 
+            <td>Recuperação gradual</td> 
+        </tr> 
+        <tr> 
+            <td><b>Taxa de Desemprego</b></td> 
+            <td>11,9%</td>
+            <td>14,7% (2021)</td>
+            <td>Estabilidade</td>
+        </tr>
+        <tr>
+            <td><b>Inflação (IPCA)</b></td>
+            <td>4,31%</td>
+            <td>10,06% (2021)</td>
+            <td>Acomodação</td>
+        </tr>
+        <tr>
+            <td><b>Pobreza e Desigualdade</b></td>
+            <td>Alta gradual</td>
+            <td>Queda temporária (Auxílio)</td>
+            <td>Nova alta e estabilização</td>
+        </tr>
+        <tr>
+            <td><b>Finanças Públicas</b></td>
+            <td>Teto de Gastos</td>
+            <td>Orçamento de Guerra</td>
+            <td>Tensão fiscal</td>
+        </tr>
+        <tr>
+            <td><b>Setor de Serviços</b></td>
+            <td>Sustentação frágil</td>
+            <td>Paralisia severa</td>
+            <td>Reabertura e expansão</td>
+        </tr>
+</table>
+    <section class="secao-cards">
+  <div class="card-financas">
+    <h3>PIB Anual</h3>
+    <p class="valor positivo">+1,2% <span class="ano">(2019)</span></p>
+    <p class="valor negativo">-4,1% <span class="ano">(2020)</span></p>
+    <p class="detalhe">Recuperação gradual pós-crise.</p>
+  </div>  
+
+  <div class="card-financas">
+    <h3>Desemprego</h3>
+    <p class="valor">11,9% <span class="ano">(2019)</span></p>
+    <p class="valor alerta">14,7% <span class="ano">(2021)</span></p>
+    <p class="detalhe">Tendência atual de estabilidade.</p>
+  </div>
+
+  <div class="card-financas">
+    <h3>Inflação (IPCA)</h3>
+    <p class="valor">4,31% <span class="ano">(2019)</span></p>
+    <p class="valor alerta">10,06% <span class="ano">(2021)</span></p>
+    <p class="detalhe">Fase atual de acomodação de preços.</p>
+  </div>
+</section>
+<hr>
+  <h3>Localização</h3>
+        <p justify>A Startup se encotra no seguinte local.
+        </p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.452882149585!2d-47.42621522469966!3d-22.56215897949912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8806c2c324933%3A0xe2108428886c8646!2sCol%C3%A9gio%20T%C3%A9cnico%20de%20Limeira%20-%20Unicamp!5e0!3m2!1spt-BR!2sbr!4v1780503986125!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p><br><i>© 2026 Rodrigo Gestão Financeira</i></p>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="3121768.png" type="image/png">
+    <title>Cadastro e Contato</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #1a365d;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        h2 {
+            color: #2b6cb0;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        a {
+            color: #3182ce;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+            margin-bottom: 15px;
+        }
+        a:hover {
+            color: #1a365d;
+            text-decoration: underline;
+        }
+        hr {
+            width: 100%;
+            max-width: 500px;
+            border: 0;
+            height: 1px;
+            background: #cbd5e0;
+            margin: 20px 0;
+        }
+        main {
+            width: 100%;
+            max-width: 500px;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            box-sizing: border-box;
+        }
+        form p {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: inline-block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2d3748;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            font-size: 15px;
+            box-sizing: border-box;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            background-color: #fff;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            border-color: #3182ce;
+            box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+            outline: none;
+        }
+        input[type="range"] {
+            width: 55%;
+            vertical-align: middle;
+            margin: 0 10px;
+        }
+        .range-container {
+            font-size: 14px;
+            color: #718096;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 5px;
+        }
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            margin-top: 5px;
+        }
+        .radio-option {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .radio-option input[type="radio"] {
+            margin: 0 6px 0 0;
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+        }
+        .radio-option label {
+            margin-bottom: 0;
+            font-weight: normal;
+            cursor: pointer;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            background-color: #3182ce;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+            margin-top: 10px;
+        }
+        button[type="submit"]:hover {
+            background-color: #2b6cb0;
+        }
+        button[type="submit"]:active {
+            transform: scale(0.98);
+        }
+        footer {
+            text-align: center;
+            font-size: 13px;
+            color: #718096;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Receba Nossas Últimas Notícias!</h1>
+    <a href="index.html">Voltar para Análise da Economia Brasileira</a>
+<hr>
+    <main>
+        <form>
+ <h2>Inscrição do Nosso Newsletter</h2>
+ <p>
+   <label for="nome">Nome Completo:</label>
+         <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+ </p>
+
+ <p>
+     <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+     </p>
+ <p>
+ <label for="satisfacao-site">O quanto você gostou do nosso site?</label>
+  <span class="range-container">
+  0 (Não gostei)
+ <input type="range" id="satisfacao-site" name="satisfacao_site" min="0" max="10" value="5" step="1">
+10 (Gostei muito)
+</span>
+</p>
+<p>
+<label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" min="16" max="100">
+  </p>
+ <p>
+<label for="interesse">Setor de Interesse:</label>
+         <select id="interesse" name="interesse">
+       <option value="mercado">Mercado Financeiro</option>
+       <option value="fiscal">Política Fiscal</option>
+      <option value="emprego">Emprego e Renda</option>
+     </select>
+     </p>
+<p>
+        <label>Receber alertas urgentes?</label>
+ <span class="radio-group">
+    <span class="radio-option">
+        <input type="radio" id="sim" name="alertas" value="sim" checked>
+ <label for="sim">Sim</label>
+ </span>
+    <span class="radio-option">
+        <input type="radio" id="nao" name="alertas" value="nao">
+<label for="nao">Não</label>
+ </span>
+ </span>
+ </p>
+
+<p>
+ <button type="submit">Finalizar Cadastro</button>
+ </p>
+     </form>
+ </main>
+ <hr>
+ <footer>
+     <p><i>© 2026 Rodrigo Gestão Financeira</i></p>
+    </footer>
+</body>
+</html>
